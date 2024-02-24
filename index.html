@@ -1,79 +1,219 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tu Nombre - CV</title>
-    <style>
-        /* Agrega estilos según sea necesario */
-    </style>
-</head>
-<body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Sección: Sobre Mí -->
-    <section>
-        <h2>Sobre Mí</h2>
-        <p>Hola, soy [Tu Nombre], y...</p>
-    </section>
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- Sección: Información de Contacto -->
-    <section>
-        <h2>Información de Contacto</h2>
-        <p>Email: tu@email.com</p>
-        <p>LinkedIn: linkedin.com/in/tunombre</p>
-        <!-- Agrega más detalles según sea necesario -->
-    </section>
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- Sección: Educación y Certificados -->
-    <section>
-        <h2>Educación y Certificados</h2>
-        <p>Grado en XYZ, Universidad ABC, Año</p>
-        <p>Certificación en XYZ, Año</p>
-        <!-- Agrega más detalles según sea necesario -->
-    </section>
+        <title>Miguel Méndez</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Miguel Méndez</a>
+                </div>
 
-    <!-- Sección: Experiencia -->
-    <section>
-        <h2>Experiencia</h2>
-        <p>Trabajo en XYZ, Cargo, Año - Actualidad</p>
-        <p>Trabajo anterior en ABC, Cargo, Año - Año</p>
-        <!-- Agrega más detalles según sea necesario -->
-    </section>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-    <!-- Sección: Hobbies -->
-    <section>
-        <h2>Hobbies</h2>
-        <p>Me encanta [hobby1], [hobby2], ...</p>
-    </section>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-    <!-- Sección: Skills Técnicas -->
-    <section>
-        <h2>Skills Técnicas</h2>
-        <ul>
-            <li>Lenguaje de Programación 1</li>
-            <li>Framework 1</li>
-            <!-- Agrega más skills técnicas -->
-        </ul>
-    </section>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Miguel Méndez</span><br> Software Developer</h1>
 
-    <!-- Sección: Soft Skills -->
-    <section>
-        <h2>Soft Skills</h2>
-        <ul>
-            <li>Habilidad 1</li>
-            <li>Habilidad 2</li>
-            <!-- Agrega más soft skills -->
-        </ul>
-    </section>
+                    <a href='https://t.me/miguel_mendez96' class="button" target="_blank">Contact</a>
+                </div>
 
-    <!-- Sección: Idioma Inglés -->
-    <section lang="en">
-        <h2>About Me</h2>
-        <p>Hello, I am [Your Name], and...</p>
-        <!-- Add more details as needed -->
-    </section>
+                <div class="home__social">
+                    <a href='https://www.linkedin.com/in/miguelmendez96/?locale=en_US' class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href='https://www.instagram.com/miguel_mendez96/' class="home__social-icon" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href='https://github.com/m-mendez96' class="home__social-icon" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
 
-    <!-- Repeat the pattern for other sections in English -->
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
 
-</body>
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About Me</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpeg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Miguel Méndez</h2>
+                        <p class="about__text">Systems engineer with experience in software development and a strong set of skills in project management and execution. My experience includes project leadership, active participation in all phases of the software development life cycle, from design to implementation, and efficient team management. More than just a project leader, I'm a passionate software developer, which allows me to bring a unique and valuable perspective to project execution.
+                            <br><br>
+                            Currently, as a versatile and dedicated professional, I seek challenging opportunities to expand my knowledge. I'm prepared to contribute my skills in both software development and comprehensive project management, offering a comprehensive and dedicated approach to any company or project looking for a leader committed to success in software development.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+            
+                <div class="contact__container bd-grid">
+                    <form id="contactForm" class="contact__form">
+                        <input type="text" id="name" placeholder="Name" class="contact__input" required>
+                        <input type="text" id="subject" placeholder="Subject" class="contact__input" required>
+                        <textarea id="message" placeholder="Message" cols="0" rows="10" class="contact__input" required></textarea>
+                        <input type="button" value="Send WhatsApp" class="contact__button button" onclick="sendWhatsApp()">
+                    </form>
+                </div>
+            
+                <script>
+                    function sendWhatsApp() {
+                        var name = document.getElementById('name').value;
+                        var subject = document.getElementById('subject').value;
+                        var message = document.getElementById('message').value;
+            
+                        var whatsappLink = "https://wa.me/584121003820?text=" + encodeURIComponent("Hola, soy " + name + ". Quisiera contactarte por: " + subject + ". " + message);
+            
+                        window.open(whatsappLink, '_blank');
+                    }
+                </script>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Miguel Méndez</p>
+            <div class="footer__social">
+                <a href='https://www.linkedin.com/in/miguelmendez96/?locale=en_US' class="footer__icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href='https://www.instagram.com/miguel_mendez96/' class="footer__icon" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href='https://github.com/m-mendez96' class="footer__icon" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <p class="footer__copy">&#169; 2024 Bedimcode. All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
