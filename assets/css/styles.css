@@ -488,7 +488,7 @@ img {
     padding-top: 2rem;
   }
   .education__img img {
-    width: 100px;
+    width: 60%;
   }
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
