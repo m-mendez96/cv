@@ -321,6 +321,24 @@ img {
 .work__img img:hover {
   transform: scale(1.1);
 }
+/* ===== EDUCATION =====*/
+.education__container {
+  row-gap: 2rem;
+  text-align: center;
+}
+.education__subtitle {
+  margin-bottom: var(--mb-2);
+}
+.education__img {
+  justify-self: center;
+}
+.education__img a {
+  display: inline-block;
+}
+.education__img img {
+  width: 200px; /* Cambiado de 200px a 40% */
+  border-radius: 0.5rem;
+}
 
 /* ===== CONTACT =====*/
 .contact__input {
@@ -398,6 +416,11 @@ img {
     align-items: center;
     text-align: initial;
   }
+  .education__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: initial;
+  }
   .skills__container {
     grid-template-columns: 0.7fr;
     justify-content: center;
@@ -459,6 +482,12 @@ img {
     padding-top: 2rem;
   }
   .about__img img {
+    width: 300px;
+  }
+  .education__container {
+    padding-top: 2rem;
+  }
+  .education__img img {
     width: 300px;
   }
   .skills__container {
