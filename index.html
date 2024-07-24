@@ -8,7 +8,9 @@
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        
         <title>Miguel Méndez</title>
     </head>
     <body>
@@ -206,79 +208,95 @@
             <section class="education section" id="work">
                 <h2 class="section-title">Work</h2>
 
-                <div class="education__container bd-grid">
-                    <div class="education__img">
-                        <a href="https://www.hablax.com/" target="_blank">
-                            <img src="assets/img/hablax.png" alt="">
-                        </a>
+                <!-- Swiper Container -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="education__container bd-grid">
+                                <div class="education__img">
+                                    <a href="https://www.hablax.com/" target="_blank">
+                                        <img src="assets/img/hablax.png" alt="">
+                                    </a>
+                                </div>
+                                
+                                <div>
+                                    <h2 class="education__subtitle">Hablax INC.</h2>
+                                    <p class="education__text">Dynamic company specializing in global International Calling, Mobile Recharges, and SMS services via App and Web.</p>
+                                    <h3 class="education__subtitle">Project Manager</h3>
+                                    <h5 class="education__subtitle">Jan 2024 - Present (7 months)</h5>
+                                    <p class="education__text">
+                                        <ol>
+                                            <li>Managing full development projects, ensuring seamless execution from initiation to delivery.</li>
+                                            <li>Overseeing and leading the IT team for optimal performance.</li>
+                                            <li>Presenting regular project updates to stakeholders, fostering transparent communication.</li>
+                                            <li>Efficiently coordinating support tickets, streamlining IT team processes.</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="education__container bd-grid">
+                                <div class="education__img">
+                                    <a href="https://www.novateva.com/EN" target="_blank">
+                                        <img src="assets/img/novateva.png" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h2 class="education__subtitle">Novateva LLC.</h2>
+                                    <p class="education__text">Global software solutions provider, specializing in mobile apps, web applications, and automation for startups and corporations.</p>
+                                    <h3 class="education__subtitle">Project Leader</h3>
+                                    <h5 class="education__subtitle">Feb 2022 - Mar 2024 (2 years, 2 months)</h5>
+                                    <p class="education__text">
+                                        <ol>
+                                            <li>Leading project planning, design, and execution.</li>
+                                            <li>Managing work teams and overseeing recruitment processes.</li>
+                                            <li>Estimating project costs and execution times.</li>
+                                            <li>Communicating and coordinating with clients or stakeholders.</li>
+                                            <li>Implementing quality control measures for software products.</li>
+                                            <li>Tracking errors and incidents, ensuring compliance with project requirements.</li>
+                                            <li>Designing, developing, and administering databases.</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="education__container bd-grid">
+                                <div class="education__img">
+                                    <a href="https://www.novateva.com/EN" target="_blank">
+                                        <img src="assets/img/novateva.png" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h2 class="education__subtitle">Novateva LLC.</h2>
+                                    <p class="education__text">Global software solutions provider, specializing in mobile apps, web applications, and automation for startups and corporations.</p>
+                                    <h3 class="education__subtitle">Backend Developer</h3>
+                                    <h5 class="education__subtitle">Aug 2020 - Mar 2024 (3 years, 8 months)</h5>
+                                    <p class="education__text">
+                                        <ol>
+                                            <li>Developing Rest and GraphQL services, including chatbot developed in Python and JavaScript.</li>
+                                            <li>Utilizing cloud-based development on GCP for Cloud Functions and Webflows.</li>
+                                            <li>Implementing test development with Unittest, Pytest, and Jest.</li>
+                                            <li>Connecting and integrating services through APIs.</li>
+                                            <li>Managing database connections with PostgreSQL, MongoDB, MySQL, and GraphQL.</li>
+                                            <li>Using and documenting services with Postman and Insomnia.</li>
+                                            <li>Deploying services on Heroku, AWS, and GCP.</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
-                        <h2 class="education__subtitle">Hablax INC.</h2>
-                        <p class="education__text">Dynamic company specializing in global International Calling, Mobile Recharges, and SMS services via App and Web.</p>
-                        <h3 class="education__subtitle">Project Manager</h3>
-                        <h5 class="education__subtitle">Jan 2024 - Present (7 months)</h5>
-                        <p class="education__text">
-                            <ol>
-                                <li>Managing full development projects, ensuring seamless execution from initiation to delivery.</li>
-                                <li>Overseeing and leading the IT team for optimal performance.</li>
-                                <li>Presenting regular project updates to stakeholders, fostering transparent communication.</li>
-                                <li>Efficiently coordinating support tickets, streamlining IT team processes.</li>
-                            </ol>
-                        </p>
-                    </div>
-                </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
 
-                <div class="education__container bd-grid">
-                    <div class="education__img">
-                        <a href="https://www.novateva.com/EN" target="_blank">
-                            <img src="assets/img/novateva.png" alt="">
-                        </a>
-                    </div>
-
-                    <div>
-                        <h2 class="education__subtitle">Novateva LLC.</h2>
-                        <p class="education__text">Global software solutions provider, specializing in mobile apps, web applications, and automation for startups and corporations.</p>
-                        <h3 class="education__subtitle">Project Leader</h3>
-                        <h5 class="education__subtitle">Feb 2022 - Mar 2024 (2 years, 2 months)</h5>
-                        <p class="education__text">
-                            <ol>
-                                <li>Leading project planning, design, and execution.</li>
-                                <li>Managing work teams and overseeing recruitment processes.</li>
-                                <li>Estimating project costs and execution times.</li>
-                                <li>Communicating and coordinating with clients or stakeholders.</li>
-                                <li>Implementing quality control measures for software products.</li>
-                                <li>Tracking errors and incidents, ensuring compliance with project requirements.</li>
-                                <li>Designing, developing, and administering databases.</li>
-                            </ol>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="education__container bd-grid">
-                    <div class="education__img">
-                        <a href="https://www.novateva.com/EN" target="_blank">
-                            <img src="assets/img/novateva.png" alt="">
-                        </a>
-                    </div>
-
-                    <div>
-                        <h2 class="education__subtitle">Novateva LLC.</h2>
-                        <p class="education__text">Global software solutions provider, specializing in mobile apps, web applications, and automation for startups and corporations.</p>
-                        <h3 class="education__subtitle">Backend Developer</h3>
-                        <h5 class="education__subtitle">Aug 2020 - Mar 2024 (3 years, 8 months)</h5>
-                        <p class="education__text">
-                            <ol>
-                                <li>Developing Rest and GraphQL services, including chatbot developed in Python and JavaScript.</li>
-                                <li>Utilizing cloud-based development on GCP for Cloud Functions and Webflows.</li>
-                                <li>Implementing test development with Unittest, Pytest, and Jest.</li>
-                                <li>Connecting and integrating services through APIs.</li>
-                                <li>Managing database connections with PostgreSQL, MongoDB, MySQL, and GraphQL.</li>
-                                <li>Using and documenting services with Postman and Insomnia.</li>
-                                <li>Deploying services on Heroku, AWS, and GCP.</li>
-                            </ol>
-                        </p>
-                    </div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </section>
 
@@ -346,5 +364,8 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     </body>
 </html>
