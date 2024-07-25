@@ -75,3 +75,20 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const tabListItems = document.querySelectorAll('.tab-list-item');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabListItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const target = document.querySelector(`#${item.getAttribute('data-tab')}`);
+
+            tabListItems.forEach(i => i.classList.remove('active'));
+            tabContents.forEach(c => c.classList.remove('active'));
+
+            item.classList.add('active');
+            target.classList.add('active');
+        });
+    });
+});
