@@ -59,6 +59,7 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 /*===== SWIPER INITIALIZATION =====*/
 document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('.swiper-container', {
+        loop: true,
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
