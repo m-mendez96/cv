@@ -55,3 +55,41 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+/*===== SWIPER INITIALIZATION =====*/
+document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const tabListItems = document.querySelectorAll('.tab-list-item');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabListItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const target = document.querySelector(`#${item.getAttribute('data-tab')}`);
+
+            tabListItems.forEach(i => i.classList.remove('active'));
+            tabContents.forEach(c => c.classList.remove('active'));
+
+            item.classList.add('active');
+            target.classList.add('active');
+        });
+    });
+});

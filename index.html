@@ -8,7 +8,9 @@
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        
         <title>Miguel Méndez</title>
     </head>
     <body>
@@ -24,7 +26,7 @@
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Experience</a></li>
                         <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
@@ -40,7 +42,7 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Miguel Méndez</span><br> Software Developer</h1>
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Miguel Méndez</span><br>Systems Engineer</h1>
 
                     <a href='https://t.me/miguel_mendez96' class="button" target="_blank">Contact</a>
                 </div>
@@ -49,6 +51,7 @@
                     <a href='https://www.linkedin.com/in/miguelmendez96/?locale=en_US' class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
                     <a href='https://www.instagram.com/miguel_mendez96/' class="home__social-icon" target="_blank"><i class='bx bxl-instagram'></i></a>
                     <a href='https://github.com/m-mendez96' class="home__social-icon" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href='https://www.upwork.com/freelancers/~01610ef02104ddd772?viewMode=1' class="home__social-icon" target="_blank"><i class='bx bxl-upwork'></i></a>
                 </div>
 
                 <div class="home__img">
@@ -88,185 +91,249 @@
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
 
-                <div class="skills__container bd-grid">          
+                <div class="skills__container bd-grid">
                     <div>
-                        <h2 class="skills__subtitle">Professional Skills</h2>
                         <p class="skills__text">As a seasoned systems engineer, I transcend mere coding. I bring forth a dynamic fusion of technical prowess and vital soft skills, poised to enrich any project with a well-rounded approach.</p>
                     </div>
-                                
+
                     <div class="skills__img-container">
                         <img src="assets/img/skills.jpg" alt="" class="skills__img">
                     </div>
                     <br>
                 </div>
-            
-                <div class="skills_table__container bd-grid">
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-javascript skills__icon'></i>
-                            <span class="skills__name">JavaScript</span>
-                        </div>
-                    </div>
-            
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-typescript skills__icon'></i>
-                            <span class="skills__name">TypeScript</span>
-                        </div>
-                    </div>
-            
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-nodejs skills__icon' ></i>
-                            <span class="skills__name">Node</span>
-                        </div>
-                    </div>
-            
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-python skills__icon' ></i>
-                            <span class="skills__name">Python</span>
-                        </div>
-                    </div>
-            
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-django skills__icon' ></i>
-                            <span class="skills__name">Django</span>
-                        </div>
-                    </div>
-            
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-flask skills__icon' ></i>
-                            <span class="skills__name">Flask</span>
-                        </div>
-                    </div>
-            
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-postgresql skills__icon' ></i>
-                            <span class="skills__name">PostgreSQL</span>
-                        </div>
-                    </div>
-            
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-mongodb skills__icon' ></i>
-                            <span class="skills__name">MongoDB</span>
-                        </div>
-                    </div>
 
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-google-cloud skills__icon' ></i>
-                            <span class="skills__name">Google Cloud</span>
+                <div class="tabs">
+                    <ul class="tab-list">
+                        <li class="tab-list-item active" data-tab="tab-1">Technical Skills</li>
+                        <li class="tab-list-item" data-tab="tab-2">Soft Skills</li>
+                    </ul>
+                    <div class="tab-content active" id="tab-1">
+                        <div class="skills_table__container bd-grid">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-javascript skills__icon'></i>
+                                    <span class="skills__name">JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-typescript skills__icon'></i>
+                                    <span class="skills__name">TypeScript</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-nodejs skills__icon'></i>
+                                    <span class="skills__name">Node</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-python skills__icon'></i>
+                                    <span class="skills__name">Python</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-django skills__icon'></i>
+                                    <span class="skills__name">Django</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-flask skills__icon'></i>
+                                    <span class="skills__name">Flask</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-postgresql skills__icon'></i>
+                                    <span class="skills__name">PostgreSQL</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-mongodb skills__icon'></i>
+                                    <span class="skills__name">MongoDB</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-google-cloud skills__icon'></i>
+                                    <span class="skills__name">Google Cloud</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-git skills__icon'></i>
+                                    <span class="skills__name">Git</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-            
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-git skills__icon' ></i>
-                            <span class="skills__name">Git</span>
-                        </div>
-                    </div>
-            
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxs-check-shield skills__icon'></i>
-                            <span class="skills__name">Organized</span>
-                        </div>
-                    </div>
-            
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxs-like skills__icon'></i>
-                            <span class="skills__name">Leadership</span>
-                        </div>
-                    </div>
-            
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxs-group skills__icon' ></i>
-                            <span class="skills__name">Teamwork</span>
-                        </div>
-                    </div>
-            
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bx-timer skills__icon' ></i>
-                            <span class="skills__name">Fast Learner</span>
+                    <div class="tab-content" id="tab-2">
+                        <div class="skills_table__container bd-grid">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxs-check-shield skills__icon'></i>
+                                    <span class="skills__name">Organized</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxs-like skills__icon'></i>
+                                    <span class="skills__name">Leadership</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxs-group skills__icon'></i>
+                                    <span class="skills__name">Teamwork</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bx-timer skills__icon'></i>
+                                    <span class="skills__name">Fast Learner</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </section>
 
-            <!--===== WORK =====-->
+            <!--===== EXPERIENCE =====-->
             <section class="education section" id="work">
-                <h2 class="section-title">Work</h2>
+                <h2 class="section-title">Experience</h2>
 
-                <div class="education__container bd-grid">
-                    <div class="education__img">
-                        <a href="https://www.hablax.com/" target="_blank">
-                            <img src="assets/img/hablax.png" alt="">
-                        </a>
+                <!-- Swiper Container -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="education__container bd-grid">
+                                <div class="education__img">
+                                    <a href="https://www.blissb.ai/" target="_blank">
+                                        <img src="assets/img/blissb.png" alt="">
+                                    </a>
+                                </div>
+                                
+                                <div>
+                                    <h2 class="education__subtitle">BlissB LLC.</h2>
+                                    <p class="education__text">Company specializing in optimizing corporate internal communication through artificial intelligence, automating processes to save time and enhance workplace well-being.</p>
+                                    <h3 class="education__subtitle">Software Engineer</h3>
+                                    <h5 class="education__subtitle">Jul 2024 - Present (5 months)</h5>
+                                    <p class="education__text">
+                                        <ol>
+                                            <li>Development of REST APIs in Python using FastAPI.</li>
+                                            <li>Implementation and integration of WhatsApp API, managing message delivery.</li>
+                                            <li>Design and development of a flow manager for bots based on templates.</li>
+                                            <li>Design and implementation of data models, as well as service definition.</li>
+                                            <li>Support in product definition, contributing with ideas and solutions.</li>
+                                            <li>Research and analysis of tools and technologies to improve processes.</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="education__container bd-grid">
+                                <div class="education__img">
+                                    <a href="https://www.hablax.com/" target="_blank">
+                                        <img src="assets/img/hablax.png" alt="">
+                                    </a>
+                                </div>
+                                
+                                <div>
+                                    <h2 class="education__subtitle">Hablax INC.</h2>
+                                    <p class="education__text">Dynamic company specializing in global International Calling, Mobile Recharges, and SMS services via App and Web.</p>
+                                    <h3 class="education__subtitle">Project Manager</h3>
+                                    <h5 class="education__subtitle">Jan 2024 - Oct 2024 (10 months)</h5>
+                                    <p class="education__text">
+                                        <ol>
+                                            <li>Managing full development projects, ensuring seamless execution from initiation to delivery.</li>
+                                            <li>Overseeing and leading the IT team for optimal performance.</li>
+                                            <li>Presenting regular project updates to stakeholders, fostering transparent communication.</li>
+                                            <li>Efficiently coordinating support tickets, streamlining IT team processes.</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="education__container bd-grid">
+                                <div class="education__img">
+                                    <a href="https://www.novateva.com/EN" target="_blank">
+                                        <img src="assets/img/novateva.png" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h2 class="education__subtitle">Novateva LLC.</h2>
+                                    <p class="education__text">Global software solutions provider, specializing in mobile apps, web applications, and automation for startups and corporations.</p>
+                                    <h3 class="education__subtitle">Project Leader</h3>
+                                    <h5 class="education__subtitle">Feb 2022 - Mar 2024 (2 years, 2 months)</h5>
+                                    <p class="education__text">
+                                        <ol>
+                                            <li>Leading project planning, design, and execution.</li>
+                                            <li>Managing work teams and overseeing recruitment processes.</li>
+                                            <li>Estimating project costs and execution times.</li>
+                                            <li>Communicating and coordinating with clients or stakeholders.</li>
+                                            <li>Implementing quality control measures for software products.</li>
+                                            <li>Tracking errors and incidents, ensuring compliance with project requirements.</li>
+                                            <li>Designing, developing, and administering databases.</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="education__container bd-grid">
+                                <div class="education__img">
+                                    <a href="https://www.novateva.com/EN" target="_blank">
+                                        <img src="assets/img/novateva.png" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h2 class="education__subtitle">Novateva LLC.</h2>
+                                    <p class="education__text">Global software solutions provider, specializing in mobile apps, web applications, and automation for startups and corporations.</p>
+                                    <h3 class="education__subtitle">Backend Developer</h3>
+                                    <h5 class="education__subtitle">Aug 2020 - Mar 2024 (3 years, 8 months)</h5>
+                                    <p class="education__text">
+                                        <ol>
+                                            <li>Developing Rest and GraphQL services, including chatbot developed in Python and JavaScript.</li>
+                                            <li>Utilizing cloud-based development on GCP for Cloud Functions and Webflows.</li>
+                                            <li>Implementing test development with Unittest, Pytest, and Jest.</li>
+                                            <li>Connecting and integrating services through APIs.</li>
+                                            <li>Managing database connections with PostgreSQL, MongoDB, MySQL, and GraphQL.</li>
+                                            <li>Using and documenting services with Postman and Insomnia.</li>
+                                            <li>Deploying services on Heroku, AWS, and GCP.</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
-                        <h2 class="education__subtitle">Hablax INC.</h2>
-                        <p class="education__text">Dynamic company specializing in global International Calling, Mobile Recharges, and SMS services via App and Web.</p>
-                        <h3 class="education__subtitle">Project Manager</h3>
-                        <h5 class="education__subtitle">Jan 2024 - Present (4 months)</h5>
-                        <p class="education__text">
-                            <ol>
-                                <li>Managing full development projects, ensuring seamless execution from initiation to delivery.</li>
-                                <li>Overseeing and leading the IT team for optimal performance.</li>
-                                <li>Presenting regular project updates to stakeholders, fostering transparent communication.</li>
-                                <li>Efficiently coordinating support tickets, streamlining IT team processes.</li>
-                            </ol>
-                        </p>
-                    </div>
-                </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
 
-                <div class="education__container bd-grid">
-                    <div class="education__img">
-                        <a href="https://www.novateva.com/EN" target="_blank">
-                            <img src="assets/img/novateva.png" alt="">
-                        </a>
-                    </div>
-
-                    <div>
-                        <h2 class="education__subtitle">Novateva LLC.</h2>
-                        <p class="education__text">Global software solutions provider, specializing in mobile apps, web applications, and automation for startups and corporations.</p>
-                        <h3 class="education__subtitle">Project Leader</h3>
-                        <h5 class="education__subtitle">Feb 2022 - Mar 2024 (2 years, 2 months)</h5>
-                        <p class="education__text">
-                            <ol>
-                                <li>Leading project planning, design, and execution.</li>
-                                <li>Managing work teams and overseeing recruitment processes.</li>
-                                <li>Estimating project costs and execution times.</li>
-                                <li>Communicating and coordinating with clients or stakeholders.</li>
-                                <li>Implementing quality control measures for software products.</li>
-                                <li>Tracking errors and incidents, ensuring compliance with project requirements.</li>
-                                <li>Designing, developing, and administering databases.</li>
-                            </ol>
-                        </p>
-
-                        <h3 class="education__subtitle">Backend Developer</h3>
-                        <h5 class="education__subtitle">Aug 2020 - Mar 2024 (3 years, 8 months)</h5>
-                        <p class="education__text">
-                            <ol>
-                                <li>Developing Rest and GraphQL services, including chatbot developed in Python and JavaScript.</li>
-                                <li>Utilizing cloud-based development on GCP for Cloud Functions and Webflows.</li>
-                                <li>Implementing test development with Unittest, Pytest, and Jest.</li>
-                                <li>Connecting and integrating services through APIs.</li>
-                                <li>Managing database connections with PostgreSQL, MongoDB, MySQL, and GraphQL.</li>
-                                <li>Using and documenting services with Postman and Insomnia.</li>
-                                <li>Deploying services on Heroku, AWS, and GCP.</li>
-                            </ol>
-                        </p>
-                    </div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </section>
 
@@ -324,6 +391,7 @@
                 <a href='https://www.linkedin.com/in/miguelmendez96/?locale=en_US' class="footer__icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
                 <a href='https://www.instagram.com/miguel_mendez96/' class="footer__icon" target="_blank"><i class='bx bxl-instagram'></i></a>
                 <a href='https://github.com/m-mendez96' class="footer__icon" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href='https://www.upwork.com/freelancers/~01610ef02104ddd772?viewMode=1' class="footer__icon" target="_blank"><i class='bx bxl-upwork'></i></a>
             </div>
             <p class="footer__copy">&#169; 2024 Bedimcode. All rigths reserved</p>
         </footer>
@@ -334,5 +402,8 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     </body>
 </html>
