@@ -48,6 +48,33 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--first-color) transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--first-color);
+  border-radius: 10px;
+  border: none;
+}
+
+body::-moz-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--first-color) transparent;
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
 }
 
 h1, h2, p {
