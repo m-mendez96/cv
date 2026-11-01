@@ -1,412 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <!-- Swiper CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-        
-        <title>Miguel Méndez</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Miguel Méndez</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Experience</a></li>
-                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Miguel Méndez</span><br>Systems Engineer</h1>
-
-                    <a href='https://t.me/miguelmendez96' class="button" target="_blank">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href='https://www.linkedin.com/in/miguelmendez96/?locale=en_US' class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                    <a href='https://www.instagram.com/miguelmendez96/' class="home__social-icon" target="_blank"><i class='bx bxl-instagram'></i></a>
-                    <a href='https://github.com/m-mendez96' class="home__social-icon" target="_blank"><i class='bx bxl-github'></i></a>
-                    <a href='https://www.upwork.com/freelancers/~01610ef02104ddd772?viewMode=1' class="home__social-icon" target="_blank"><i class='bx bxl-upwork'></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About Me</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpeg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'm Miguel Méndez</h2>
-                        <p class="about__text">an experienced systems engineer with a strong background in software development and a talent for efficient project management. With a hands-on approach to leading projects throughout the entire software development life cycle, I bring a unique combination of technical expertise and strategic leadership.
-                            <br><br>
-                            Throughout my career, I have refined my skills not only in project management but also in actively participating in every phase of development, from design to implementation. Whether it's coordinating teams effectively or tackling complex challenges, I thrive on delivering comprehensive and innovative solutions.
-                            <br><br>
-                            Are you looking to take your company or project to the next level? Let's embark on this journey of innovation together! With my expertise in software development and project management, I'm ready to drive success. Ready to make an impact? Let's start coding!
-                        </p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">
-                    <div>
-                        <p class="skills__text">As a seasoned systems engineer, I go beyond coding. I combine deep technical expertise with essential soft skills, ensuring a well-rounded approach to every project. My ability to analyze complex problems, collaborate effectively, and adapt to evolving challenges makes me a valuable asset in any development environment.</p>
-                    </div>
-
-                    <div class="skills__img-container">
-                        <img src="assets/img/skills.jpg" alt="" class="skills__img">
-                    </div>
-                    <br>
-                </div>
-
-                <div class="tabs">
-                    <ul class="tab-list">
-                        <li class="tab-list-item active" data-tab="tab-1">Technical Skills</li>
-                        <li class="tab-list-item" data-tab="tab-2">Soft Skills</li>
-                    </ul>
-                    <div class="tab-content active" id="tab-1">
-                        <div class="skills_table__container bd-grid">
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxl-javascript skills__icon'></i>
-                                    <span class="skills__name">JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxl-typescript skills__icon'></i>
-                                    <span class="skills__name">TypeScript</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxl-nodejs skills__icon'></i>
-                                    <span class="skills__name">Node</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxl-python skills__icon'></i>
-                                    <span class="skills__name">Python</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxl-django skills__icon'></i>
-                                    <span class="skills__name">Django</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxl-flask skills__icon'></i>
-                                    <span class="skills__name">Flask</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxl-postgresql skills__icon'></i>
-                                    <span class="skills__name">PostgreSQL</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxl-mongodb skills__icon'></i>
-                                    <span class="skills__name">MongoDB</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxl-google-cloud skills__icon'></i>
-                                    <span class="skills__name">Google Cloud</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxl-git skills__icon'></i>
-                                    <span class="skills__name">Git</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-content" id="tab-2">
-                        <div class="skills_table__container bd-grid">
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxs-check-shield skills__icon'></i>
-                                    <span class="skills__name">Organized</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxs-like skills__icon'></i>
-                                    <span class="skills__name">Leadership</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxs-group skills__icon'></i>
-                                    <span class="skills__name">Teamwork</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bx-timer skills__icon'></i>
-                                    <span class="skills__name">Fast Learner</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== EXPERIENCE =====-->
-            <section class="education section" id="work">
-                <h2 class="section-title">Experience</h2>
-
-                <!-- Swiper Container -->
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="education__container bd-grid">
-                                <div class="education__img">
-                                    <a href="https://www.blissb.ai/" target="_blank">
-                                        <img src="assets/img/blissb.png" alt="">
-                                    </a>
-                                </div>
-                                
-                                <div>
-                                    <h2 class="education__subtitle">BlissB</h2>
-                                    <p class="education__text">Company specializing in optimizing corporate internal communication through artificial intelligence, automating processes to save time and enhance workplace well-being.</p>
-                                    <h3 class="education__subtitle">Software Engineer</h3>
-                                    <h5 class="education__subtitle">Jul 2024 - Present (9 months)</h5>
-                                    <p class="education__text">
-                                        <ol>
-                                            <li>Development and optimization of services.</li>
-                                            <li>Implementation and integration of third-party messaging services (WhatsApp, Telegram, etc.)</li>
-                                            <li>Design and development of a flow manager for bots.</li>
-                                            <li>Database modeling and implementation.</li>
-                                            <li>Product definition and improvement.</li>
-                                            <li>Research and evaluation of new technologies.</li>
-                                            <li>Creation of detailed technical documentation.</li>
-                                        </ol>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="education__container bd-grid">
-                                <div class="education__img">
-                                    <a href="https://www.hablax.com/" target="_blank">
-                                        <img src="assets/img/hablax.png" alt="">
-                                    </a>
-                                </div>
-                                
-                                <div>
-                                    <h2 class="education__subtitle">Hablax</h2>
-                                    <p class="education__text">Dynamic company specializing in global International Calling, Mobile Recharges, and SMS services via App and Web.</p>
-                                    <h3 class="education__subtitle">Project Manager</h3>
-                                    <h5 class="education__subtitle">Jan 2024 - Oct 2024 (10 months)</h5>
-                                    <p class="education__text">
-                                        <ol>
-                                            <li>Comprehensive management of software development projects.</li>
-                                            <li>Leadership and supervision of the IT team.</li>
-                                            <li>Presentation of project progress and reports to stakeholders.</li>
-                                            <li>Coordination and prioritization of support tickets.</li>
-                                            <li>Strategic planning and time estimation for the execution of development projects.</li>
-                                        </ol>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="education__container bd-grid">
-                                <div class="education__img">
-                                    <a href="https://www.novateva.com/EN" target="_blank">
-                                        <img src="assets/img/novateva.png" alt="">
-                                    </a>
-                                </div>
-                                <div>
-                                    <h2 class="education__subtitle">Novateva</h2>
-                                    <p class="education__text">Global software solutions provider, specializing in mobile apps, web applications, and automation for startups and corporations.</p>
-                                    <h3 class="education__subtitle">Project Leader</h3>
-                                    <h5 class="education__subtitle">Feb 2022 - Mar 2024 (2 years, 2 months)</h5>
-                                    <p class="education__text">
-                                        <ol>
-                                            <li>Leadership in the planning, design, and execution of software projects.</li>
-                                            <li>Management and supervision of work teams, including selection and training.</li>
-                                            <li>Estimation and control of costs and execution timelines.</li>
-                                            <li>Communication and coordination with clients and stakeholders.</li>
-                                            <li>Implementation of quality control measures.</li>
-                                            <li>Monitoring and management of errors and incidents.</li>
-                                            <li>Design, development, and administration of databases.</li>
-                                        </ol>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="education__container bd-grid">
-                                <div class="education__img">
-                                    <a href="https://www.novateva.com/EN" target="_blank">
-                                        <img src="assets/img/novateva.png" alt="">
-                                    </a>
-                                </div>
-                                <div>
-                                    <h2 class="education__subtitle">Novateva</h2>
-                                    <p class="education__text">Global software solutions provider, specializing in mobile apps, web applications, and automation for startups and corporations.</p>
-                                    <h3 class="education__subtitle">Backend Developer</h3>
-                                    <h5 class="education__subtitle">Aug 2020 - Mar 2024 (3 years, 8 months)</h5>
-                                    <p class="education__text">
-                                        <ol>
-                                            <li>Development of services (REST and GraphQL) and chatbots.</li>
-                                            <li>Implementation of serverless architectures on Google Cloud Platform.</li>
-                                            <li>Development and execution of automated tests.</li>
-                                            <li>Integration of third-party services via APIs.</li>
-                                            <li>Management and optimization of relational and NoSQL databases.</li>
-                                            <li>Documentation of services, both technical and product-related.</li>
-                                            <li>Deployment and administration of applications in cloud environments.</li>
-                                        </ol>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- Add Navigation -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </section>
-
-            <!--===== EDUCATION =====-->
-            <section class="education section" id="education">
-                <h2 class="section-title">Education</h2>
-
-                <div class="education__container bd-grid">
-                    <div class="education__img">
-                        <a href="http://www.ula.ve/ingenieria/" target="_blank">
-                            <img src="assets/img/ula.jpg" alt="">
-                        </a>
-                    </div>
-
-                    <div>
-                        <h2 class="education__subtitle">Systems Engineer Degree<br>Computer Systems</h2>
-                        <p class="education__text">Institution: Universidad de los Andes, VE.
-                            <br>
-                            Mar 2015 - Feb 2021</p>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-            
-                <div class="contact__container bd-grid">
-                    <form id="contactForm" class="contact__form">
-                        <input type="text" id="name" placeholder="Name" class="contact__input" required>
-                        <input type="text" id="subject" placeholder="Subject" class="contact__input" required>
-                        <textarea id="message" placeholder="Message" cols="0" rows="10" class="contact__input" required></textarea>
-                        <input type="button" value="Send WhatsApp" class="contact__button button" onclick="sendWhatsApp()">
-                    </form>
-                </div>
-            
-                <script>
-                    function sendWhatsApp() {
-                        var name = document.getElementById('name').value;
-                        var subject = document.getElementById('subject').value;
-                        var message = document.getElementById('message').value;
-            
-                        var whatsappLink = "https://wa.me/584121003820?text=" + encodeURIComponent("Hola, soy " + name + ". Quisiera contactarte por: " + subject + ". " + message);
-            
-                        window.open(whatsappLink, '_blank');
-                    }
-                </script>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Miguel Méndez</p>
-            <div class="footer__social">
-                <a href='https://www.linkedin.com/in/miguelmendez96/?locale=en_US' class="footer__icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href='https://www.instagram.com/miguelmendez96/' class="footer__icon" target="_blank"><i class='bx bxl-instagram'></i></a>
-                <a href='https://github.com/m-mendez96' class="footer__icon" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href='https://www.upwork.com/freelancers/~01610ef02104ddd772?viewMode=1' class="footer__icon" target="_blank"><i class='bx bxl-upwork'></i></a>
-            </div>
-            <p class="footer__copy">&#169; 2025 Bedimcode. All rigths reserved</p>
-        </footer>
-
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    </body>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0c1323">
+  <meta name="description" content="Miguel Méndez — Software Engineer especializado en backend, Java, Python e integraciones empresariales.">
+  <meta property="og:title" content="Miguel Méndez | Software Engineer">
+  <meta property="og:description" content="Backend development, integrations and enterprise software.">
+  <meta property="og:type" content="website">
+  <title>Miguel Méndez · Software Engineer</title>
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="ambient ambient-1" aria-hidden="true"></div><div class="ambient ambient-2" aria-hidden="true"></div>
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Miguel Méndez, inicio"><span class="brand-mark">m<span>.</span></span><span class="brand-name">miguel<span>mendez</span><span class="brand-cursor">_</span></span></a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#sobre-mi" data-i18n="navAbout">Sobre mí</a><a href="#experiencia" data-i18n="navExperience">Experiencia</a><a href="#tecnologias" data-i18n="navStack">Tecnologías</a><a href="#trayectoria" data-i18n="navJourney">Trayectoria</a><a href="#contacto" data-i18n="navContact">Contacto</a>
+    </nav>
+    <div class="nav-actions"><button id="language" class="tiny-btn" type="button" aria-label="Change language">EN <span aria-hidden="true">↗</span></button><button id="theme" class="icon-btn" aria-label="Cambiar tema" title="Cambiar tema">☼</button><button class="icon-btn menu-btn" id="menu" aria-label="Abrir menú" aria-expanded="false">☰</button></div>
+  </div>
+</header>
+<main id="main">
+<section id="inicio" class="hero wrap">
+  <div class="hero-copy reveal">
+    <p class="eyebrow"><span class="pulse-dot"></span><span data-i18n="heroEyebrow">PORTAFOLIO PERSONAL</span></p>
+    <h1><span data-i18n="heroLead">Hola, soy</span><br><span class="name-gradient">Miguel Méndez<span class="period">.</span></span></h1>
+    <p class="role">Software Engineer <span class="role-sep">/</span> <span data-i18n="heroRole">Backend & Integraciones</span></p>
+    <p class="hero-description" data-i18n="heroDesc">Diseño, desarrollo y mantengo servicios que conectan sistemas y convierten procesos de negocio complejos en soluciones de software confiables.</p>
+    <div class="hero-actions"><a href="#experiencia" class="btn btn-primary"><span data-i18n="explore">Explorar experiencia</span> <span aria-hidden="true">↗</span></a><a href="#contacto" class="btn btn-outline"><span data-i18n="contactMe">Hablemos</span> <span aria-hidden="true">↗</span></a></div>
+    <div class="hero-links"><a target="_blank" rel="noopener noreferrer" href="https://github.com/m-mendez96">GitHub ↗</a><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/miguelmendez96/">LinkedIn ↗</a><button id="print" type="button"><span data-i18n="printResume">Guardar como PDF</span> ↗</button></div>
+  </div>
+  <div class="hero-visual reveal">
+    <div class="photo-frame"><div class="photo-grid"></div><img src="assets/img/perfil-linkedin.jpg" alt="Retrato profesional de Miguel Méndez" class="portrait"><div class="photo-glow"></div></div>
+    <div class="floating-label label-top"><span class="green-dot"></span><span data-i18n="photoBadge">Construyendo soluciones</span></div>
+    <div class="floating-label label-bottom"><span class="code-icon">{ }</span> Java · Python · APIs</div>
+    <div class="visual-plus plus-one">+</div><div class="visual-plus plus-two">+</div>
+  </div>
+</section>
+<div class="marquee" aria-label="Áreas técnicas"><div>JAVA <span>✳</span> PYTHON <span>✳</span> REST APIS <span>✳</span> SYSTEM INTEGRATION <span>✳</span> SQL <span>✳</span> GROOVY <span>✳</span> BACKEND ENGINEERING <span>✳</span> JAVA <span>✳</span> PYTHON <span>✳</span> REST APIS <span>✳</span> SYSTEM INTEGRATION <span>✳</span></div></div>
+<section id="sobre-mi" class="section wrap">
+  <div class="section-heading reveal"><span class="section-num">01 / <span data-i18n="aboutLabel">PERFIL</span></span><h2 data-i18n="aboutTitle">Ingeniería con visión de producto y negocio<span class="period">.</span></h2></div>
+  <div class="about-layout"><div class="about-main reveal"><p class="lead" data-i18n="aboutLead">Soy Ingeniero de Sistemas con una trayectoria que combina desarrollo backend, integraciones empresariales, aseguramiento de calidad y coordinación técnica de proyectos.</p><p data-i18n="aboutBody1">Mi enfoque actual está en el desarrollo y mantenimiento de servicios Java, la integración de plataformas empresariales y la evolución de aplicaciones existentes. Trabajo con procesos de compras y facturación de Coupa, desde solicitudes y órdenes hasta recepciones y facturas.</p><p data-i18n="aboutBody2">Antes desarrollé APIs y soluciones backend con Python, FastAPI y JavaScript. Haber participado tanto en implementación como en QA y liderazgo me permite comprender los sistemas de principio a fin.</p><a href="#contacto" class="text-link"><span data-i18n="aboutCTA">Conectemos para construir algo útil</span> <span>↗</span></a></div><aside class="about-panel reveal"><span class="panel-kicker" data-i18n="focusLabel">ENFOQUE ACTUAL</span><div class="focus-item"><span>01</span><strong data-i18n="focus1">Ingeniería backend</strong></div><div class="focus-item"><span>02</span><strong data-i18n="focus2">Integración empresarial</strong></div><div class="focus-item"><span>03</span><strong data-i18n="focus3">Calidad y mantenibilidad</strong></div><div class="panel-footer"><span class="tiny-status"></span><span data-i18n="focusFoot">Aprendizaje y evolución continua</span></div></aside></div>
+</section>
+<section id="experiencia" class="section wrap">
+  <div class="section-heading reveal"><span class="section-num">02 / <span data-i18n="expLabel">EXPERIENCIA</span></span><h2 data-i18n="expTitle">Experiencia que conecta tecnología y resultados<span class="period">.</span></h2><p class="section-intro" data-i18n="expIntro">De construir APIs a mantener integraciones empresariales: una trayectoria que une desarrollo, calidad y liderazgo.</p></div>
+  <div id="experience-list" class="experience-list" aria-live="polite"></div>
+</section>
+<section id="tecnologias" class="section section-alt"><div class="wrap"><div class="section-heading reveal"><span class="section-num">03 / <span data-i18n="techLabel">STACK TÉCNICO</span></span><h2 data-i18n="techTitle">Herramientas con las que construyo<span class="period">.</span></h2><p class="section-intro" data-i18n="techIntro">Tecnologías utilizadas a lo largo de mi trayectoria. Organizadas por su función, sin porcentajes arbitrarios de dominio.</p></div><div id="stack-filters" class="filter-tabs" role="group" aria-label="Filtrar tecnologías"></div><div id="stack-grid" class="stack-grid" aria-live="polite"></div></div></section>
+<section id="trayectoria" class="section wrap"><div class="section-heading reveal"><span class="section-num">04 / <span data-i18n="journeyLabel">FORMACIÓN</span></span><h2 data-i18n="journeyTitle">Aprender, construir, compartir<span class="period">.</span></h2></div><div class="journey-grid"><article class="journey-card reveal"><span class="mini-label" data-i18n="educationLabel">EDUCACIÓN</span><div class="journey-icon">⌘</div><h3 data-i18n="degree">Ingeniería de Sistemas</h3><p>Universidad de los Andes (VE)</p><span class="date">2015 — 2021</span></article><article class="journey-card reveal"><span class="mini-label" data-i18n="teachingLabel">DOCENCIA</span><div class="journey-icon">✦</div><h3 data-i18n="teachingTitle">Profesor invitado · Programación I</h3><p>Universidad de los Andes (VE)</p><span class="date">2022</span></article><article class="journey-card reveal"><span class="mini-label" data-i18n="learningLabel">FORMACIÓN CONTINUA</span><div class="journey-icon">↗</div><h3 data-i18n="coursesTitle">Backend, calidad y agilidad</h3><p data-i18n="coursesBody">Cursos de SENA, Platzi y Comfenalco en desarrollo, Python, Scrum, QA e inglés.</p><span class="date">2021 — 2026</span></article></div><div class="principles reveal"><div><span class="mini-label" data-i18n="nextLabel">HACIA DÓNDE VOY</span><h3 data-i18n="nextTitle">Mi siguiente capítulo: sistemas más robustos y mejor diseñados.</h3></div><p data-i18n="nextBody">Quiero seguir creciendo como Software Engineer, profundizando en arquitectura backend, integración de sistemas distribuidos, diseño de servicios y buenas prácticas de ingeniería.</p></div></section>
+<section id="contacto" class="section contact-section"><div class="wrap contact-layout"><div class="reveal"><span class="section-num">05 / <span data-i18n="contactLabel">CONTACTO</span></span><h2 data-i18n="contactTitle">¿Construimos algo juntos?</h2><p data-i18n="contactDesc">Me interesa conectar con equipos que construyen productos, plataformas e integraciones de software.</p><div class="contact-actions"><a class="btn btn-light" href="mailto:immendez196@gmail.com"><span data-i18n="emailMe">Enviar un correo</span> ↗</a><a class="btn btn-ghost" href="https://www.linkedin.com/in/miguelmendez96/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div><div class="contact-graphic reveal" aria-hidden="true"><span>&lt;/&gt;</span></div></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><a href="#inicio" class="footer-brand">miguelmendez<span>.</span></a><p>© <span id="year">2026</span> Miguel Méndez <span data-i18n="footerBuilt"></span></p><a href="#inicio" class="back-top"><span data-i18n="backTop">Volver arriba</span> ↑</a></div></footer>
+</body>
 </html>
